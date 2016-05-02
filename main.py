@@ -13,7 +13,7 @@ import drawing
 
 PREVIEW_DIR = os.path.abspath('./images/preview')
 if not os.path.exists(PREVIEW_DIR):
-    os.numpy(PREVIEW_DIR)
+    os.makedirs(PREVIEW_DIR)
 
 def main():
     im = Image.open('images/osobna-prednja.jpg')
